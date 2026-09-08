@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AfroCare | Hospital Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-mark">✚</div><div><b>AfroCare</b><span>Health Systems</span></div></div>
+  <nav>
+    <button class="nav-item active" data-page="dashboard"><span>⌂</span>Dashboard</button>
+    <button class="nav-item" data-page="patients"><span>♙</span>Patients</button>
+    <button class="nav-item" data-page="appointments"><span>◷</span>Appointments</button>
+    <button class="nav-item" data-page="doctors"><span>♧</span>Doctors</button>
+    <button class="nav-item" data-page="wards"><span>▦</span>Wards & Beds</button>
+    <button class="nav-item" data-page="billing"><span>◈</span>Billing</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="storage"><div class="storage-top"><span>Local storage</span><b id="storageStatus">Ready</b></div><div class="bar"><i></i></div><small>Your data stays in this browser.</small></div><button class="nav-item" data-page="settings"><span>⚙</span>Settings</button></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="menu-btn" id="menuBtn">☰</button><div class="crumb"><span id="pageKicker">Overview</span><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search patients, doctors..."></div><button class="icon-btn" id="themeBtn" title="Toggle theme">☼</button><div class="avatar">AT</div></div></header>
+<div class="content" id="content"></div>
+</main></div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div>
+<script src="script.js"></script>
+</body></html>
